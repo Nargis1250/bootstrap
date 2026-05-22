@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h1>WE ARE LEARNING JQUERY</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto enim rerum sapiente eaque, officiis quidem, aliquam dolorum eos fugit dolores delectus provident adipisci itaque. Consequuntur reprehenderit nobis nulla minima minus!</p> -->
+
+    <!-- <button id="clk">CLICK</button> -->
+
+    <img src="" width="500px" height="300px" alt="">
+    <button id="change">change</button>
+
+    <script src="https://releases.jquery.com/git/jquery-git.js"></script>
+
+    <script>
+    //$("#clk").click(function(){
+      //  $("h1").css("background","pink")
+        //$("h1").css("color","black")
+        //$("p").css("background","black")
+        //$("p").css("color","white")
+        //$("p").css("fontsize","50px")
+
+     // })
+         let count=0;
+
+        let images = [
+
+        "https://plus.unsplash.com/premium_photo-1690571200236-0f9098fc6ca9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2V8ZW58MHx8MHx8fDA%3D",
+        "https://plus.unsplash.com/premium_photo-1669839137069-4166d6ea11f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BhY2V8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNwYWNlfGVufDB8fDB8fHww",
+        "https://media.istockphoto.com/id/2234142725/photo/bright-spiral-galaxy-in-deep-space-with-glowing-center-and-distant-stars-in-the-universe.webp?a=1&b=1&s=612x612&w=0&k=20&c=f17fnJj_j8NwZQ_Wo5Vc4tzSOnbFX2JmzZg9SPObucs=",
+        "https://media.istockphoto.com/id/2234142725/photo/bright-spiral-galaxy-in-deep-space-with-glowing-center-and-distant-stars-in-the-universe.webp?a=1&b=1&s=612x612&w=0&k=20&c=f17fnJj_j8NwZQ_Wo5Vc4tzSOnbFX2JmzZg9SPObucs="  
+     ]
+
+
+     $("#change").click(function(){
+        count ++;
+        $("img").attr("src",images[count])
+     })
+</script>
+</body>
+</html>
